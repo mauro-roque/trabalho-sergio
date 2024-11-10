@@ -1,0 +1,11 @@
+<div *ngIf="categorias.length">
+    <ul>
+      <li *ngFor="let categoria of categorias">
+        {{ categoria.nome }} (Ativo: {{ categoria.ativo }})
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="!categorias.length">
+    Nenhuma categoria encontrada.
+  </div>
+  

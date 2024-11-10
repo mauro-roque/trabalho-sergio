@@ -1,0 +1,11 @@
+<div *ngIf="unidadesFederativas.length">
+    <ul>
+      <li *ngFor="let unidade of unidadesFederativas">
+        {{ unidade.nome }} - {{ unidade.sigla }} (Ativo: {{ unidade.ativo }})
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="!unidadesFederativas.length">
+    Nenhuma unidade federativa encontrada.
+  </div>
+  
